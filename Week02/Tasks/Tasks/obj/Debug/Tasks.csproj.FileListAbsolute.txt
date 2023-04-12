@@ -1,0 +1,7 @@
+D:\2nd semester\OOP\Lab\Week02\Tasks\Tasks\bin\Debug\Tasks.exe.config
+D:\2nd semester\OOP\Lab\Week02\Tasks\Tasks\bin\Debug\Tasks.exe
+D:\2nd semester\OOP\Lab\Week02\Tasks\Tasks\bin\Debug\Tasks.pdb
+D:\2nd semester\OOP\Lab\Week02\Tasks\Tasks\obj\Debug\Tasks.csproj.AssemblyReference.cache
+D:\2nd semester\OOP\Lab\Week02\Tasks\Tasks\obj\Debug\Tasks.csproj.CoreCompileInputs.cache
+D:\2nd semester\OOP\Lab\Week02\Tasks\Tasks\obj\Debug\Tasks.exe
+D:\2nd semester\OOP\Lab\Week02\Tasks\Tasks\obj\Debug\Tasks.pdb
