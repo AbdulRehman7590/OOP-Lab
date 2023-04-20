@@ -1,0 +1,7 @@
+D:\2nd semester\OOP\Lab\Week03\ClockType\ClockType\bin\Debug\ClockType.exe.config
+D:\2nd semester\OOP\Lab\Week03\ClockType\ClockType\bin\Debug\ClockType.exe
+D:\2nd semester\OOP\Lab\Week03\ClockType\ClockType\bin\Debug\ClockType.pdb
+D:\2nd semester\OOP\Lab\Week03\ClockType\ClockType\obj\Debug\ClockType.csproj.AssemblyReference.cache
+D:\2nd semester\OOP\Lab\Week03\ClockType\ClockType\obj\Debug\ClockType.csproj.CoreCompileInputs.cache
+D:\2nd semester\OOP\Lab\Week03\ClockType\ClockType\obj\Debug\ClockType.exe
+D:\2nd semester\OOP\Lab\Week03\ClockType\ClockType\obj\Debug\ClockType.pdb
