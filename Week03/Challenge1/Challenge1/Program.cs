@@ -59,7 +59,7 @@ namespace Challenge1
             Console.Write("Elapsed time : ");
             time3.ElapseTime();
             Console.WriteLine(" ");
-
+             
             Console.Write("Remaining time : ");
             time3.RemainingTime();
             Console.WriteLine(" ");
