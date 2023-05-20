@@ -70,7 +70,7 @@ namespace Challenge
                     Student s = StudentPresent(Console.ReadLine(), stuList);
                     if (s != null)
                     {
-                        s.ViewSubjects();
+                        ViewSubjects(s);
                         RegisterSubjects(s);
                     }
                     else
@@ -102,6 +102,7 @@ namespace Challenge
 
         static int Menu()
         {
+            Header();
             Console.WriteLine("1. Add student");
             Console.WriteLine("2. Add Degree Program");
             Console.WriteLine("3. Generate merit");
@@ -114,10 +115,18 @@ namespace Challenge
             Console.Write("Select Option : ");
             return int.Parse(Console.ReadLine());
         }
-        static int AskingOption()
+        static void Header()
         {
-            Console.Write("Press -1 to Exit Or any digit key to Continue : ");
-            return int.Parse(Console.ReadLine());
+            Console.WriteLine("**********************************************");
+            Console.WriteLine("                     UAMS                     ");
+            Console.WriteLine("**********************************************");
+            Console.WriteLine(" ");
+        }
+
+        static string AskingOption()
+        {
+            Console.Write("Do you want to enter more (Y/N): ");
+            return Console.ReadLine();
         }
 
 
@@ -142,8 +151,8 @@ namespace Challenge
         static List<DegreeProgram> AddPreferences(List<DegreeProgram> programsList)
         {
             ShowAvailablePrograms(programsList);
-            List<DegreeProgram> regPrograms = new List<DegreeProgram>();
-            int count;
+            List<DegreeProgram> prefer = new List<DegreeProgram>();
+            string count;
             do
             {
                 Console.Write("Enter name of program : ");
@@ -152,9 +161,9 @@ namespace Challenge
                 {
                     foreach (var x in programsList)
                     {
-                        if (name == x.degreeName)
+                        if (name == x.degreeName && !(prefer.Contains(x)))
                         {
-                            regPrograms.Add(x);
+                            prefer.Add(x);
                         }
                     }
                 }
@@ -164,8 +173,8 @@ namespace Challenge
                 }
                 count = AskingOption();
             }
-            while (count != -1);
-            return regPrograms;
+            while (count != "N");
+            return prefer;
         }
         static void ShowAvailablePrograms(List<DegreeProgram> programsList)
         {
@@ -189,16 +198,15 @@ namespace Challenge
             Console.Write("Enter Degree seats : ");
             int seats = int.Parse(Console.ReadLine());
 
-            DegreeProgram data = new DegreeProgram(name, duration, seats);
+            DegreeProgram degpro = new DegreeProgram(name, duration, seats);
 
             Console.Write("How many subjects to Enter : ");
-            int n = int.Parse(Console.ReadLine());
-            for (int x = 0; x < n; x++)
+            int count = int.Parse(Console.ReadLine());
+            for (int x = 0; x < count; x++)
             {
-                Subject subjInput = TakingSubjectInput();
-                data.AddSubject(subjInput);
+                degpro.AddSubject(TakingSubjectInput());
             }
-            return data;
+            return degpro;
         }
         static Subject TakingSubjectInput()
         {
@@ -235,7 +243,7 @@ namespace Challenge
             {
                 foreach (var i in x.preferences)
                 {
-                    if (i.seats > 1)
+                    if (i.seats > 1 && x.regDegree == null)
                     {
                         x.regDegree = i;
                         i.seats--;
@@ -267,7 +275,7 @@ namespace Challenge
             {
                 if (x.regDegree != null)
                 {
-                    x.PrintStudent();
+                    Console.WriteLine(x.name.PadRight(20, ' ') + x.age.ToString().PadRight(20, ' ') + x.fscMarks.ToString().PadRight(20, ' ') + x.ecatMarks.ToString().PadRight(20, ' '));
                 }
             }
         }
@@ -275,11 +283,13 @@ namespace Challenge
 
         static void ViewStudentsInDegree(DegreeProgram n, List<Student> stuList)
         {
+            Console.WriteLine("Name".PadRight(20, ' ') + "Age".PadRight(20, ' ') + "FSc Marks".PadRight(20, ' ') + "Ecat Marks".PadRight(20, ' '));
+
             foreach (var x in stuList)
             {
                 if (n == x.regDegree)
                 {
-                    x.PrintStudent();
+                    Console.WriteLine(x.name.PadRight(20, ' ') + x.age.ToString().PadRight(20, ' ') + x.fscMarks.ToString().PadRight(20, ' ') + x.ecatMarks.ToString().PadRight(20, ' '));
                 }
             }
         }
@@ -300,7 +310,7 @@ namespace Challenge
         {
             foreach (var x in stuList)
             {
-                if (n == x.name)
+                if (n == x.name && x.regDegree != null)
                 {
                     return x;
                 }
@@ -308,10 +318,25 @@ namespace Challenge
             return null;
         }
 
+        static void ViewSubjects(Student s)
+        {
+            if (s.regDegree != null)
+            {
+                Console.WriteLine("Subject Code".PadRight(20, ' ') + "Type".PadRight(20, ' ') + "Credit Hours".PadRight(20, ' ') + "Subject Fees");
+                foreach (var x in s.regDegree.subjects)
+                {
+                    Console.WriteLine(x.code.PadRight(20, ' ') + x.type.PadRight(20, ' ') + x.creditHours.ToString().PadRight(20, ' ') + x.subjectFees);
+                }
+            }
+            else
+            {
+                Console.WriteLine("NO data Found !!!");
+            }
+        }
 
         static void RegisterSubjects(Student s)
         {
-            int option = 0;
+            string option;
             do
             {
                 Console.Write("Enter the Subject code : ");
@@ -319,7 +344,7 @@ namespace Challenge
 
                 foreach (var x in s.regDegree.subjects)
                 {
-                    if (cod == x.code)
+                    if (cod == x.code && !(s.regSubjects.Contains(x)))
                     {
                         s.RegStudentSubject(x);
                         break;
@@ -328,7 +353,7 @@ namespace Challenge
 
                 option = AskingOption();
             }
-            while (option != -1);
+            while (option != "N");
         }
 
 
@@ -346,7 +371,7 @@ namespace Challenge
             }
             if (flag == false)
             {
-                Console.WriteLine("Register subjects first !!!");
+                Console.WriteLine("Register first !!!");
             }
         }
 

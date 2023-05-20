@@ -1,0 +1,7 @@
+D:\2nd semester\OOP\Lab\Week05\Challenge01\Challenge01\bin\Debug\Challenge01.exe.config
+D:\2nd semester\OOP\Lab\Week05\Challenge01\Challenge01\bin\Debug\Challenge01.exe
+D:\2nd semester\OOP\Lab\Week05\Challenge01\Challenge01\bin\Debug\Challenge01.pdb
+D:\2nd semester\OOP\Lab\Week05\Challenge01\Challenge01\obj\Debug\Challenge01.csproj.AssemblyReference.cache
+D:\2nd semester\OOP\Lab\Week05\Challenge01\Challenge01\obj\Debug\Challenge01.csproj.CoreCompileInputs.cache
+D:\2nd semester\OOP\Lab\Week05\Challenge01\Challenge01\obj\Debug\Challenge01.exe
+D:\2nd semester\OOP\Lab\Week05\Challenge01\Challenge01\obj\Debug\Challenge01.pdb

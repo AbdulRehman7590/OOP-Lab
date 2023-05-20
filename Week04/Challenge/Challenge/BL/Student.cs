@@ -28,11 +28,6 @@ namespace Challenge.BL
         }
 
 
-        public void PrintStudent()
-        {
-            Console.WriteLine(this.name.PadRight(20, ' ') + this.age.ToString().PadRight(20, ' ') + this.fscMarks.ToString().PadRight(20, ' ') + this.ecatMarks.ToString().PadRight(20, ' '));
-        }
-
         public double CalculateMerit(int fsc, int ecat)
         {
             return (((fsc / 100.0F) * (this.fscMarks * 100 / 1100)) + ((ecat / 100.0F) * (this.ecatMarks * 100 / 1100)));
@@ -41,7 +36,7 @@ namespace Challenge.BL
         public int GetCreditHours()
         {
             int ch = 0;
-            foreach (var x in regDegree.subjects)
+            foreach (var x in regSubjects)
             {
                 ch += x.creditHours;
             }
@@ -51,9 +46,12 @@ namespace Challenge.BL
         public float CalculateFee()
         {
             float fees = 0;
-            foreach (var x in regSubjects)
+            if (regDegree != null)
             {
-                fees += x.subjectFees * x.creditHours;
+                foreach (var x in regSubjects)
+                {
+                    fees += x.subjectFees * x.creditHours;
+                }
             }
             return fees;
         }
@@ -71,21 +69,7 @@ namespace Challenge.BL
             }
         }
 
-        public void ViewSubjects()
-        {
-            if (regDegree != null)
-            {
-                Console.WriteLine("Subject Code".PadRight(20, ' ') + "Type".PadRight(20, ' ') + "Credit Hours".PadRight(20, ' ') + "Subject Fees");
-                foreach (var x in regDegree.subjects)
-                {
-                    Console.WriteLine(x.code.PadRight(20, ' ') + x.type.PadRight(20, ' ') + x.creditHours.ToString().PadRight(20, ' ') + x.subjectFees);
-                }
-            }
-            else
-            {
-                Console.WriteLine("NO data Found !!!");
-            }
-        }
+       
 
     }
 }

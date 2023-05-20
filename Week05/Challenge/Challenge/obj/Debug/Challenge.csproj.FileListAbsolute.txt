@@ -1,0 +1,14 @@
+D:\2nd semester\OOP\Lab\Week04\Challenge\Challenge\bin\Debug\Challenge.exe.config
+D:\2nd semester\OOP\Lab\Week04\Challenge\Challenge\bin\Debug\Challenge.exe
+D:\2nd semester\OOP\Lab\Week04\Challenge\Challenge\bin\Debug\Challenge.pdb
+D:\2nd semester\OOP\Lab\Week04\Challenge\Challenge\obj\Debug\Challenge.csproj.AssemblyReference.cache
+D:\2nd semester\OOP\Lab\Week04\Challenge\Challenge\obj\Debug\Challenge.csproj.CoreCompileInputs.cache
+D:\2nd semester\OOP\Lab\Week04\Challenge\Challenge\obj\Debug\Challenge.exe
+D:\2nd semester\OOP\Lab\Week04\Challenge\Challenge\obj\Debug\Challenge.pdb
+D:\2nd semester\OOP\Lab\Week05\Challenge\Challenge\bin\Debug\Challenge.exe.config
+D:\2nd semester\OOP\Lab\Week05\Challenge\Challenge\bin\Debug\Challenge.exe
+D:\2nd semester\OOP\Lab\Week05\Challenge\Challenge\bin\Debug\Challenge.pdb
+D:\2nd semester\OOP\Lab\Week05\Challenge\Challenge\obj\Debug\Challenge.csproj.AssemblyReference.cache
+D:\2nd semester\OOP\Lab\Week05\Challenge\Challenge\obj\Debug\Challenge.csproj.CoreCompileInputs.cache
+D:\2nd semester\OOP\Lab\Week05\Challenge\Challenge\obj\Debug\Challenge.exe
+D:\2nd semester\OOP\Lab\Week05\Challenge\Challenge\obj\Debug\Challenge.pdb

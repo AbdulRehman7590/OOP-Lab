@@ -1,0 +1,7 @@
+D:\GitHub\OOP Lab\Week05\Challenge02\Challenge02\bin\Debug\Challenge02.exe.config
+D:\GitHub\OOP Lab\Week05\Challenge02\Challenge02\bin\Debug\Challenge02.exe
+D:\GitHub\OOP Lab\Week05\Challenge02\Challenge02\bin\Debug\Challenge02.pdb
+D:\GitHub\OOP Lab\Week05\Challenge02\Challenge02\obj\Debug\Challenge02.csproj.AssemblyReference.cache
+D:\GitHub\OOP Lab\Week05\Challenge02\Challenge02\obj\Debug\Challenge02.csproj.CoreCompileInputs.cache
+D:\GitHub\OOP Lab\Week05\Challenge02\Challenge02\obj\Debug\Challenge02.exe
+D:\GitHub\OOP Lab\Week05\Challenge02\Challenge02\obj\Debug\Challenge02.pdb
