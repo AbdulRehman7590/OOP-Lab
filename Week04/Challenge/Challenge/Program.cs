@@ -227,7 +227,7 @@ namespace Challenge
             return subj;
         }
 
-
+         
         static void SortedStudentsByMerit(List<Student> stuList)
         {
             foreach (var x in stuList)
