@@ -17,7 +17,7 @@ namespace Problem_01
             CoffeeShop shop = new CoffeeShop(name);
 
             do
-            {
+            { 
                 option = CoffeeUI.Menu(name);
                 
                 if (option == 1)
