@@ -93,14 +93,14 @@ namespace Problem_02.BL
         public void Move()
         {
 
-            if (this.Direction == "LeftToRight" && (this.StartingPoint.GetX() < Premises.TopRight.GetX()))
+            if (this.Direction == "LeftToRight")
             {
-                this.StartingPoint.SetX(StartingPoint.GetX() + 1);
+                MovetoRight();
             }
 
-            else if (this.Direction == "RightToLeft" && (this.StartingPoint.GetX() > this.Premises.TopLeft.GetX()))
+            else if (this.Direction == "RightToLeft")
             {
-                this.StartingPoint.SetX(StartingPoint.GetX() - 1);
+                MovetoLeft();
             }
 
             else if (this.Direction == "Patrol")
@@ -115,63 +115,37 @@ namespace Problem_02.BL
                     dir = "Left";
                 }
 
-                if (dir == "Right" && (this.StartingPoint.GetX() < this.Premises.TopRight.GetX()))
+                if (dir == "Right")
                 {
-                    this.StartingPoint.SetX(StartingPoint.GetX() + 1);
+                    MovetoRight();
                 }
 
-                else if (dir == "Left" && (this.StartingPoint.GetX() > this.Premises.TopLeft.GetX()))
+                else if (dir == "Left")
                 {
-                    this.StartingPoint.SetX(StartingPoint.GetX() - 1);
+                    MovetoLeft();
                 }
             }
 
             else if (this.Direction == "Diagonal")
             {
-                if ((this.StartingPoint.GetX() < this.Premises.BottomRight.GetX()) && (this.StartingPoint.GetY() < this.Premises.BottomRight.GetY()))
-                {
-                    this.StartingPoint.SetX(StartingPoint.GetX() + 1);
-                    this.StartingPoint.SetY(StartingPoint.GetY() + 1);
-                }
-
-                /*else if ((this.StartingPoint.GetX() == this.Premises.BottomRight.GetX()) && (this.StartingPoint.GetY() < this.Premises.BottomRight.GetY()))
-                {
-                    this.StartingPoint.SetY(StartingPoint.GetY() + 1);
-                }
-
-                else if ((this.StartingPoint.GetX() < this.Premises.BottomRight.GetX()) && (this.StartingPoint.GetY() == this.Premises.BottomRight.GetY()))
-                {
-                    this.StartingPoint.SetX(StartingPoint.GetX() + 1);
-                }*/
-
+                MoveToBottomDiagonal();
             }
 
             else if (this.Direction == "Projectile")
             {
                 if (count <= 4)
                 {
-                    if ((this.StartingPoint.GetX() < this.Premises.TopRight.GetX()) && (this.StartingPoint.GetY() > this.Premises.TopRight.GetY()))
-                    {
-                        this.StartingPoint.SetX(StartingPoint.GetX() + 1);
-                        this.StartingPoint.SetY(StartingPoint.GetY() - 1);
-                    }
+                    MoveToUpperDiagonal();
                     count++;
                 }
                 else if (count > 4 && count <= 6)
                 {
-                    if (this.StartingPoint.GetX() < Premises.TopRight.GetX())
-                    {
-                        this.StartingPoint.SetX(StartingPoint.GetX() + 1);
-                    }
+                    MovetoRight();
                     count++;
                 }
                 else if (count > 6 && count <= 10)
                 {
-                    if ((this.StartingPoint.GetX() < this.Premises.BottomRight.GetX()) && (this.StartingPoint.GetY() < this.Premises.BottomRight.GetY()))
-                    {
-                        this.StartingPoint.SetX(StartingPoint.GetX() + 1);
-                        this.StartingPoint.SetY(StartingPoint.GetY() + 1);
-                    }
+                    MoveToBottomDiagonal();
                     count++;
                 }
                 if (count > 10)
@@ -182,6 +156,39 @@ namespace Problem_02.BL
 
         }
 
+        private void MovetoRight()
+        {
+            if(this.StartingPoint.GetX() < Premises.TopRight.GetX())
+            {
+                this.StartingPoint.SetX(StartingPoint.GetX() + 1);
+            }
+        }
+
+        private void MovetoLeft()
+        {
+            if(this.StartingPoint.GetX() > this.Premises.TopLeft.GetX())
+            {
+                this.StartingPoint.SetX(StartingPoint.GetX() - 1);
+            }
+        }
+
+        private void MoveToBottomDiagonal()
+        {
+            if ((this.StartingPoint.GetX() < this.Premises.BottomRight.GetX()) && (this.StartingPoint.GetY() < this.Premises.BottomRight.GetY()))
+            {
+                this.StartingPoint.SetX(StartingPoint.GetX() + 1);
+                this.StartingPoint.SetY(StartingPoint.GetY() + 1);
+            }
+        }
+        
+        private void MoveToUpperDiagonal()
+        {
+            if ((this.StartingPoint.GetX() < this.Premises.BottomRight.GetX()) && (this.StartingPoint.GetY() < this.Premises.BottomRight.GetY()))
+            {
+                this.StartingPoint.SetX(StartingPoint.GetX() + 1);
+                this.StartingPoint.SetY(StartingPoint.GetY() - 1);
+            }
+        }
 
     }
 }
