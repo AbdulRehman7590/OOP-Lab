@@ -10,7 +10,7 @@ using Challenge.UI;
 namespace Challenge
 {
     class Program
-    {
+    { 
         static void Main(string[] args)
         {
             int option;
