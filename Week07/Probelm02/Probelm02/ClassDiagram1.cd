@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Probelm02.BL.Employee">
+    <Position X="6.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Probelm02.BL.FireChief">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\FireChief.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Probelm02.BL.Firefighter">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\Firefighter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Probelm02.BL.HosePipe" Collapsed="true">
+    <Position X="9.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAABAAABAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>BL\HosePipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Probelm02.BL.Ladder" Collapsed="true">
+    <Position X="11.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>BL\Ladder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Probelm02.BL.Truck" Collapsed="true">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgRAAAA=</HashCode>
+      <FileName>BL\Truck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
