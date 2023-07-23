@@ -1,0 +1,22 @@
+D:\Pacman\Pacman\bin\Debug\Pacman.exe.config
+D:\Pacman\Pacman\bin\Debug\Pacman.exe
+D:\Pacman\Pacman\bin\Debug\Pacman.pdb
+D:\Pacman\Pacman\obj\Debug\Pacman.csproj.AssemblyReference.cache
+D:\Pacman\Pacman\obj\Debug\Pacman.csproj.SuggestedBindingRedirects.cache
+D:\Pacman\Pacman\obj\Debug\Pacman.csproj.CoreCompileInputs.cache
+D:\Pacman\Pacman\obj\Debug\Pacman.exe
+D:\Pacman\Pacman\obj\Debug\Pacman.pdb
+D:\Pacman\Pacman\bin\Debug\EZInput.dll
+D:\Pacman\Pacman\bin\Debug\EZInput.xml
+D:\Pacman\Pacman\obj\Debug\Pacman.csproj.CopyComplete
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\bin\Debug\Pacman.exe.config
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\bin\Debug\Pacman.exe
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\bin\Debug\Pacman.pdb
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\bin\Debug\EZInput.dll
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\bin\Debug\EZInput.xml
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\obj\Debug\Pacman.csproj.AssemblyReference.cache
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\obj\Debug\Pacman.csproj.SuggestedBindingRedirects.cache
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\obj\Debug\Pacman.csproj.CoreCompileInputs.cache
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\obj\Debug\Pacman.csproj.CopyComplete
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\obj\Debug\Pacman.exe
+D:\2nd semester\OOP\Lab\Week10\Pacman\Pacman\obj\Debug\Pacman.pdb
